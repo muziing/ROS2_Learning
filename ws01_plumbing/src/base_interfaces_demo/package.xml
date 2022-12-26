@@ -4,13 +4,22 @@
   <name>base_interfaces_demo</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="muzing@todo.todo">muzing</maintainer>
+  <maintainer email="muzi2001@foxmail.com">muzing</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <!-- 编译依赖 -->
+  <build_depend>rosidl_default_generators</build_depend>
+
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
+
+  <!-- 执行依赖 -->
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <!-- 声明当前包所属的功能包组 -->
+  <member_of_group>rosidl_interface_packages</member_of_group>
 
   <export>
     <build_type>ament_cmake</build_type>
