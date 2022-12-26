@@ -24,7 +24,7 @@ public:
         RCLCPP_INFO(this->get_logger(), "订阅方创建!");
 
         // 3-1.创建订阅方
-        subcription_ = this->create_subscription<Student>("chartter_stu", 10, std::bind(&ListenerStu::do_cb, this, std::placeholders::_1));
+        subcription_ = this->create_subscription<Student>("chatter_stu", 10, std::bind(&ListenerStu::do_cb, this, std::placeholders::_1));
     }
 
 private:

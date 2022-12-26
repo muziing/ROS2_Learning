@@ -24,7 +24,7 @@ public:
     TalkerStu() : Node("talker_stu_node_cpp")
     {
         // 3-1.创建发布方
-        publisher_ = this->create_publisher<Student>("chartter_stu", 10);
+        publisher_ = this->create_publisher<Student>("chatter_stu", 10);
 
         // 3-2.创建定时器
         timer_ = this->create_wall_timer(500ms, std::bind(&TalkerStu::on_timer, this));
