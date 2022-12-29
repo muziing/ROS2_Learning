@@ -24,3 +24,5 @@
   - [py02_service](ws01_plumbing/src/py02_service/) - 服务通信（Python 实现）
   - [cpp03_action](ws01_plumbing/src/cpp03_action/) - 动作通信（C++ 实现）
   - [py03_action](ws01_plumbing/src/py03_action) - 动作通信（Python 实现）
+  - [cpp04_param](ws01_plumbing/src/cpp04_param/) - 参数服务（C++ 实现）
+  - [py04_param](ws01_plumbing/src/py04_param/) - 参数服务（Python 实现）
