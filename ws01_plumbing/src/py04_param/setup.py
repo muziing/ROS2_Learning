@@ -7,8 +7,7 @@ setup(
     version='0.1.0',
     packages=[package_name],
     data_files=[
-        ('share/ament_index/resource_index/packages',
-            ['resource/' + package_name]),
+        ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
     install_requires=['setuptools'],
@@ -20,7 +19,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'demo00_param = py04_param.demo00_param:main'
+            'demo00_param = py04_param.demo00_param:main',
+            'demo01_param_server = py04_param.demo01_param_server:main',
         ],
     },
 )
