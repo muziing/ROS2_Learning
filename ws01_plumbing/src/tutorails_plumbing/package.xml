@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>tutorails_plimbing</name>
+  <version>0.1.0</version>
+  <description>元功能包</description>
+  <maintainer email="muzi2001@foxmail.com">muzing</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>base_interface_demo</exec_depend>
+  <exec_depend>cpp01_topic</exec_depend>
+  <exec_depend>cpp02_service</exec_depend>
+  <exec_depend>cpp04_param</exec_depend>
+  <exec_depend>py01_topic</exec_depend>
+  <exec_depend>py02_service</exec_depend>
+  <exec_depend>py03_action</exec_depend>
+  <exec_depend>py04_param</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
