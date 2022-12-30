@@ -2,4 +2,13 @@ launch:
   - node:
       pkg: "turtlesim"
       exec: "turtlesim_node"
-      name: "t1"
+      name: "turtle3"
+  - node:
+      pkg: "turtlesim"
+      exec: "turtlesim_node"
+      namespace: "t3"
+  - node:
+      pkg: "turtlesim"
+      exec: "turtlesim_node"
+      namespace: "t3"
+      name: "turtle3"
