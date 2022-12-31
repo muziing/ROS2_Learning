@@ -1,10 +1,19 @@
-#include <cstdio>
+#include "rclcpp/rclcpp.hpp"
 
-int main(int argc, char ** argv)
+class MyNode : public rclcpp::Node
 {
-  (void) argc;
-  (void) argv;
+public:
+    MyNode() : Node("my_node_cpp", "t1_ns")
+    {
+        // 通过编程方式设置命名空间
+    }
+};
 
-  printf("hello world cpp05_names package\n");
-  return 0;
+int main(int argc, char const *argv[])
+{
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<MyNode>());
+    rclcpp::shutdown();
+
+    return 0;
 }
