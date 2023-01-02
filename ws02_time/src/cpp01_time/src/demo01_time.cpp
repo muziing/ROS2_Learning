@@ -1,3 +1,11 @@
+/*
+Time 与 Duration 区别：
+    1.二者只是API相似
+    2.二者有本质区别：
+        Time 指一个具体时刻
+        Duration 指一个时间段
+*/
+
 #include "rclcpp/rclcpp.hpp"
 
 using namespace std::chrono_literals;
@@ -8,7 +16,8 @@ public:
     TimeNode() : Node("time_node_cpp")
     {
         // this->demo_rate();
-        this->demo_time();
+        // this->demo_time();
+        this->demo_duration();
     }
 
 private:
@@ -41,6 +50,18 @@ private:
         RCLCPP_INFO(this->get_logger(), "sec = %.2f, nsec = %ld", t1.seconds(), t1.nanoseconds());
         RCLCPP_INFO(this->get_logger(), "sec = %.2f, nsec = %ld", t2.seconds(), t2.nanoseconds());
         RCLCPP_INFO(this->get_logger(), "sec = %.2f, nsec = %ld", right_now.seconds(), right_now.nanoseconds());
+    }
+
+    // 演示 duration 持续时间的使用
+    void demo_duration()
+    {
+        // 1.创建Duration对象
+        rclcpp::Duration du1(1s);
+        rclcpp::Duration du2(2, 500000000);
+
+        // 2.调用函数
+        RCLCPP_INFO(this->get_logger(), "sec = %.2f, nsec = %ld", du1.seconds(), du1.nanoseconds());
+        RCLCPP_INFO(this->get_logger(), "sec = %.2f, nsec = %ld", du2.seconds(), du2.nanoseconds());
     }
 };
 
