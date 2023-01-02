@@ -6,7 +6,11 @@ launch:
   - node:
       pkg: "turtlesim"
       exec: "turtlesim_node"
+      name: "turtle1"
       namespace: "t3"
+      remap:
+        - from: "/t3/turtle1/cmd_vel"
+          to: "/cmd_vel"
   - node:
       pkg: "turtlesim"
       exec: "turtlesim_node"

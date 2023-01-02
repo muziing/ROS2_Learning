@@ -1,5 +1,13 @@
 <launch>
-    <node pkg="turtlesim" exec="turtlesim_node" name="turtle2" />
-    <node pkg="turtlesim" exec="turtlesim_node" namespace="t2" />
-    <node pkg="turtlesim" exec="turtlesim_node" namespace="t3" name="turtle2" />
+    <!-- 解决节点重名问题：设置命名空间或重命名  -->
+    <!-- <node pkg="turtlesim" exec="turtlesim_node" name="turtle2" />
+    <node pkg="turtlesim"
+    exec="turtlesim_node" namespace="t2" />
+    <node pkg="turtlesim" exec="turtlesim_node"
+    namespace="t3" name="turtle2" /> -->
+
+    <!-- 通过remap标签实现话题重映射 -->
+    <node pkg="turtlesim" exec="turtlesim_node" name="turtle1">
+        <remap from="/turtle1/cmd_vel" to="/cmd_vel" />
+    </node>
 </launch>
