@@ -1,12 +1,15 @@
+import threading
+
 import rclpy
 from rclpy.node import Node
-import threading
+from rclpy.time import Time
 
 
 class TimeNode(Node):
     def __init__(self):
         super().__init__("time_node_py")
-        self.demo_rate()
+        # self.demo_rate()
+        self.demo_time()
 
     def demo_rate(self):
         # 1.创建 Rate 对象
@@ -25,6 +28,19 @@ class TimeNode(Node):
         while rclpy.ok():
             self.get_logger().info("++++++++++++++++")
             self.rate.sleep()
+
+    def demo_time(self):
+        # 1.创建time对象
+        t1 = Time(seconds=5, nanoseconds=500000000)
+        right_now = self.get_clock().now()
+
+        # 2.调用time函数
+        self.get_logger().info(
+            f"sec = {t1.seconds_nanoseconds()[0]} nsec = {t1.seconds_nanoseconds()[1]}"
+        )
+        self.get_logger().info(
+            f"sec = {right_now.seconds_nanoseconds()[0]} nsec = {right_now.nanoseconds}"
+        )
 
 
 def main():
