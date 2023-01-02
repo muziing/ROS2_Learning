@@ -10,16 +10,26 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 
 add_executable(demo01_time src/demo01_time.cpp)
+add_executable(demo02_time_calculation src/demo02_time_calculation.cpp)
+
 target_include_directories(demo01_time PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 target_compile_features(demo01_time PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+
 ament_target_dependencies(
   demo01_time
   "rclcpp"
 )
 
-install(TARGETS demo01_time
+ament_target_dependencies(
+  demo02_time_calculation
+  "rclcpp"
+)
+
+install(TARGETS
+  demo01_time
+  demo02_time_calculation
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
