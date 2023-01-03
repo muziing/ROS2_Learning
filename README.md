@@ -2,10 +2,13 @@
 
 [![ROS2 version](https://img.shields.io/badge/ROS2-humble-blue)](https://docs.ros.org/en/humble/index.html)
 [![Ubuntu version](https://img.shields.io/static/v1?label=Ubuntu&message=22.04&color=e95420)](https://releases.ubuntu.com/22.04/)
+[![Python code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ## 说明
 
 对应课程：[赵虚左 - ROS2理论与实践核心篇](https://space.bilibili.com/1101432368/channel/collectiondetail?sid=700208)
+
+![课程封面](resources/images/course_cover.jpg)
 
 仅使用 Git 管理了 src 目录下的源代码，与本地配置相关的开发配置文件、install 目录下的编译结果不做同步。
 
@@ -31,3 +34,4 @@
   - [cpp05_names_launch](ws01_plumbing/src/cpp05_names/launch/) - 通过launch文件修改节点、话题名称
   - [py05_names](ws01_plumbing/src/py05_names/) - 节点命名空间、话题命名空间、话题重命名等（Python）
 - [ws02_time](ws02_time/) - 时间相关 API 的使用
+- [ws03_exercise](ws03_exercise/) - 期中大作业
