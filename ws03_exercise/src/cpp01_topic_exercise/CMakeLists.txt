@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(cpp01_exercise)
+project(cpp01_topic_exercise)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -9,7 +9,6 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(turtlesim REQUIRED)
-find_package(base_interfaces_demo REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp_action REQUIRED)
 
@@ -22,9 +21,7 @@ ament_target_dependencies(
   exer01_pub_sub
   "rclcpp"
   "turtlesim"
-  "base_interfaces_demo"
   "geometry_msgs"
-  "rclcpp_action"
 )
 
 install(TARGETS exer01_pub_sub
