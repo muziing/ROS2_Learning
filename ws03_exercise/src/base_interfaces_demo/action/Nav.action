@@ -1,0 +1,12 @@
+# 请求数据
+float32 goal_x
+float32 goal_y
+float32 goal_theta
+---
+# 最终响应
+float32 turtle_x
+float32 turtle_y
+float32 turtle_theta
+---
+# 连续反馈
+float32 distance
