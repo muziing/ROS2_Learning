@@ -35,3 +35,8 @@
   - [py05_names](ws01_plumbing/src/py05_names/) - 节点命名空间、话题命名空间、话题重命名等（Python）
 - [ws02_time](ws02_time/) - 时间相关 API 的使用
 - [ws03_exercise](ws03_exercise/) - 期中大作业
+  - [cpp01_topic_exercise](ws03_exercise/src/cpp01_topic_exercise/) - 话题通信案例
+  - [cpp02_service_exercise](ws03_exercise/src/cpp02_service_exercise/) - 服务通信案例
+  - [cpp03_action_exercise](ws03_exercise/src/cpp03_action_exercise/) - 动作通信案例
+  - [cpp04](ws03_exercise/src/cpp04_param_exercise/) - 服务通信案例
+- [ws04_tools](ws04_tools/) - launch 与 rosbag2
