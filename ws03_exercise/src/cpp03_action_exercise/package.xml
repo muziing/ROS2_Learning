@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>cpp03_service_exercise</name>
+  <name>cpp03_action_exercise</name>
   <version>0.0.0</version>
   <description>期中大作业：动作通讯</description>
   <maintainer email="muzi2001@foxmail.com">muzing</maintainer>
