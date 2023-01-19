@@ -64,6 +64,8 @@
   - [py02_node_launch](ws04_tools/src/cpp01_launch/launch/py/py02_node_launch.py) - Node 节点使用
   - [py03_cmd_launch](ws04_tools/src/cpp01_launch/launch/py/py03_cmd_launch.py) - 执行命令
   - [py04_args_launch](ws04_tools/src/cpp01_launch/launch/py/py04_args_launch.py) - 参数设置
+  - [py05_include_launch](ws04_tools/src/cpp01_launch/launch/py/py05_include_launch.py) - 文件包含
+  - [py06_group_launch](ws04_tools/src/cpp01_launch/launch/py/py06_group_launch.py) - 分组
 - XML 与 yaml 版 launch 文件
   - [xml01_helloworld_launch](ws04_tools/src/cpp01_launch/launch/xml/xml01_helloworld_launch.xml) - launch 基本示例（XML版）
   - [yaml01_helloworld_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml01_helloworld_launch.yaml) - launch 基本示例（YAML版）
