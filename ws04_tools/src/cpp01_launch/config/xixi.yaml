@@ -1,0 +1,13 @@
+/t2:
+  ros__parameters:
+    background_b: 10
+    background_g: 160
+    background_r: 205
+    qos_overrides:
+      /parameter_events:
+        publisher:
+          depth: 1000
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+    use_sim_time: false
