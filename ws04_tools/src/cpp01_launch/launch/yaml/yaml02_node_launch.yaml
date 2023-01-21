@@ -1,0 +1,15 @@
+launch:
+  - node:
+      pkg: "turtlesim"
+      exec: "turtlesim_node"
+      name: "t2"
+      namespace: "ns"
+      exec_name: "my_yaml"
+      # respawn: "true"
+      respawn: "false"
+      param:
+        - name: "background_r"
+          value: 100
+        # - from: "$(find-pkg-share cpp01_launch)/config/xixi.yaml"
+      # ros_args: "--remap __ns:=/xxx/yyy"
+      args: "--ros-args --remap __ns:=/xxx/yyy"
