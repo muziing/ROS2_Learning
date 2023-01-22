@@ -1,8 +1,8 @@
 # ROS2 学习
 
-[![ROS2 version](https://img.shields.io/badge/ROS2-humble-blue)](https://docs.ros.org/en/humble/index.html)
-[![Ubuntu version](https://img.shields.io/static/v1?label=Ubuntu&message=22.04&color=e95420)](https://releases.ubuntu.com/22.04/)
-[![Python code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![ROS2 version](https://img.shields.io/badge/ROS2-humble-blue?logo=ros)](https://docs.ros.org/en/humble/index.html)
+[![Ubuntu version](https://img.shields.io/static/v1?label=Ubuntu&message=22.04&color=e95420&logo=ubuntu)](https://releases.ubuntu.com/22.04/)
+[![Python code style](https://img.shields.io/badge/code%20style-black-000000?logo=python)](https://github.com/psf/black)
 
 ## 说明
 
@@ -74,3 +74,5 @@
   - [yaml02_node_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml02_node_launch.yaml) - Node节点使用（YAML）
   - [xml03_cmd_launch](ws04_tools/src/cpp01_launch/launch/xml/xml03_cmd_launch.xml) - 执行终端命令（XML）
   - [yaml03_cmd_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml03_cmd_launch.yaml) - 执行终端命令（YAML）
+  - [xml04_args_launch](ws04_tools/src/cpp01_launch/launch/xml/xml04_args_launch.xml) - 参数设置（XML）
+  - [yaml04_args_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml04_args_launch.yaml) - 参数设置（YAML）
