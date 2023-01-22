@@ -1,0 +1,4 @@
+<launch>
+    <!-- 执行终端指令 -->
+    <executable cmd="ros2 run turtlesim turtlesim_node" output="both" />
+</launch>

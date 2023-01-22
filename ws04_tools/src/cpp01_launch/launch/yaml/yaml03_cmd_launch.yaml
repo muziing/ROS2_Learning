@@ -1,0 +1,4 @@
+launch:
+  - executable:
+      cmd: "ros2 run turtlesim turtlesim_node"
+      output: "both"
