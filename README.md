@@ -78,3 +78,5 @@
   - [yaml04_args_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml04_args_launch.yaml) - 参数设置（YAML）
   - [xml05_include_launch](ws04_tools/src/cpp01_launch/launch/xml/xml05_include_launch.xml) - 文件包含（XML）
   - [yaml05_include_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml05_include_launch.yaml) - 文件包含（YAML）
+  - [xml06_group_launch](ws04_tools/src/cpp01_launch/launch/xml/xml06_group_launch.xml) - 分组（XML）
+  - [yaml06_group_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml06_group_launch.yaml) - 分组（YAML）

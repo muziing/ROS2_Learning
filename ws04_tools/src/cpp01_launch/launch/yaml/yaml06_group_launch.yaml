@@ -1,0 +1,20 @@
+launch:
+  - group:
+      - push-ros-namespace:
+          namespace: "g1"
+      - node:
+          pkg: "turtlesim"
+          exec: "turtlesim_node"
+          name: "t1"
+      - node:
+          pkg: "turtlesim"
+          exec: "turtlesim_node"
+          name: "t2"
+
+  - group:
+      - push-ros-namespace:
+          namespace: "g2"
+      - node:
+          pkg: "turtlesim"
+          exec: "turtlesim_node"
+          name: "t3"
