@@ -68,5 +68,9 @@
   - [py06_group_launch](ws04_tools/src/cpp01_launch/launch/py/py06_group_launch.py) - 分组
   - [py07_event_launch](ws04_tools/src/cpp01_launch/launch/py/py07_event_launch.py) - 事件
 - XML 与 yaml 版 launch 文件
-  - [xml01_helloworld_launch](ws04_tools/src/cpp01_launch/launch/xml/xml01_helloworld_launch.xml) - launch 基本示例（XML版）
-  - [yaml01_helloworld_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml01_helloworld_launch.yaml) - launch 基本示例（YAML版）
+  - [xml01_helloworld_launch](ws04_tools/src/cpp01_launch/launch/xml/xml01_helloworld_launch.xml) - launch 基本示例（XML）
+  - [yaml01_helloworld_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml01_helloworld_launch.yaml) - launch 基本示例（YAML）
+  - [xml02_node_launch](ws04_tools/src/cpp01_launch/launch/xml/xml02_node_launch.xml) - Node节点使用（XML）
+  - [yaml02_node_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml02_node_launch.yaml) - Node节点使用（YAML）
+  - [xml03_cmd_launch](ws04_tools/src/cpp01_launch/launch/xml/xml03_cmd_launch.xml) - 执行终端命令（XML）
+  - [yaml03_cmd_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml03_cmd_launch.yaml) - 执行终端命令（YAML）
