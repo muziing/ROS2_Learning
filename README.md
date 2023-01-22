@@ -76,3 +76,5 @@
   - [yaml03_cmd_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml03_cmd_launch.yaml) - 执行终端命令（YAML）
   - [xml04_args_launch](ws04_tools/src/cpp01_launch/launch/xml/xml04_args_launch.xml) - 参数设置（XML）
   - [yaml04_args_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml04_args_launch.yaml) - 参数设置（YAML）
+  - [xml05_include_launch](ws04_tools/src/cpp01_launch/launch/xml/xml05_include_launch.xml) - 文件包含（XML）
+  - [yaml05_include_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml05_include_launch.yaml) - 文件包含（YAML）
