@@ -53,7 +53,7 @@
 - [cpp03_action_exercise](ws03_exercise/src/cpp03_action_exercise/) - 动作通信案例
 - [cpp04_param_exercise](ws03_exercise/src/cpp04_param_exercise/) - 服务通信案例
 
-### [ws04_tools](ws04_tools/) - launch 与 rosbag2
+### [ws04_tools](ws04_tools/) - launch、rosbag2、tf坐标变换
 
 [py01_launch](ws04_tools/src/py01_launch) - Python 功能包中使用 launch 示例
 
@@ -80,3 +80,12 @@
   - [yaml05_include_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml05_include_launch.yaml) - 文件包含（YAML）
   - [xml06_group_launch](ws04_tools/src/cpp01_launch/launch/xml/xml06_group_launch.xml) - 分组（XML）
   - [yaml06_group_launch](ws04_tools/src/cpp01_launch/launch/yaml/yaml06_group_launch.yaml) - 分组（YAML）
+
+[cpp02_rosbag](ws04_tools/src/cpp02_rosbag) - C++ 中编程使用 rosbag2
+
+- [demo01_writer](ws04_tools/src/cpp02_rosbag/src/demo01_writer.cpp) - 录制 rosbag2 文件
+- [demo02_reader](ws04_tools/src/cpp02_rosbag/src/demo02_reader.cpp) - 读取 rosbag2 文件
+
+[cpp03_tf_broadcaster](ws04_tools/src/cpp03_tf_broadcaster) - 坐标变换广播器
+
+- [demo01_static_tf_broadcaster](ws04_tools/src/cpp03_tf_broadcaster/src/demo01_static_tf_broadcaster.cpp) - 静态坐标变换广播器
