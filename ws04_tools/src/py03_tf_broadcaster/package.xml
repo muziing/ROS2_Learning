@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>py03_tf_broadcaster</name>
+  <version>0.0.0</version>
+  <description>坐标变换广播实验</description>
+  <maintainer email="muzi2001@foxmail.com">muzing</maintainer>
+  <license>TODO: License declaration</license>
+
+  <depend>rclpy</depend>
+  <depend>tf_transformations</depend>
+  <depend>tf2_ros</depend>
+  <depend>geometry_msgs</depend>
+  <depend>turtlesim</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
