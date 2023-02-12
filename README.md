@@ -89,3 +89,66 @@
 [cpp03_tf_broadcaster](ws04_tools/src/cpp03_tf_broadcaster) - 坐标变换广播器
 
 - [demo01_static_tf_broadcaster](ws04_tools/src/cpp03_tf_broadcaster/src/demo01_static_tf_broadcaster.cpp) - 静态坐标变换广播器
+- [demo02_dynamic_tf_broadcaster](ws04_tools/src/cpp03_tf_broadcaster/src/demo02_dynamic_tf_broadcaster.cpp) - 动态坐标变换广播器
+
+[py03_tf_broadcaster](ws04_tools/src/py03_tf_broadcaster) - 坐标变换广播器
+
+- [demo01_tf_static_broadcaster_py](ws04_tools/src/py03_tf_broadcaster/py03_tf_broadcaster/demo01_tf_static_broadcaster_py.py) - 静态坐标变换广播器
+
+## 附录：VS Code 开发环境配置
+
+### 插件
+
+- [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack)
+- [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+- [XML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
+- [XML Tools](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml)
+- [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+- [ROS](https://marketplace.visualstudio.com/items?itemName=ms-iot.vscode-ros)
+- [URDF](https://marketplace.visualstudio.com/items?itemName=smilerobotics.urdf)
+- [Msg Language Support](https://marketplace.visualstudio.com/items?itemName=ajshort.msg)
+
+### 配置文件
+
+仅为示意，需要根据实际路径替换。
+
+```json
+// .vscode/c_cpp_properties.json
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/humble/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
+```
+
+```json
+// .vscode/settings.json
+{
+    "ros.distro": "humble",
+    "python.analysis.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages"
+    ],
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+    ],
+}
+```
